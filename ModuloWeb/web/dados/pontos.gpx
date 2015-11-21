@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><gpx xmlns="http://www.topografix.com/GPX/1/1">
+<wpt lon="157.00" lat="5.00">
+<ele>0</ele>
+<time>"{$timestamp}"</time>
+<name>"{$login}"</name>
+</wpt>
+<wpt lon="-2698365.38923" lat="-5193252.61684">
+<ele>0</ele>
+<time>"{$timestamp}"</time>
+<name>"{$login}"</name>
+</wpt>
+<wpt lon="-3698365.38923" lat="-5293252.61684">
+<ele>0</ele>
+<time>"{$timestamp}"</time>
+<name>"{$login}"</name>
+</wpt>
+</gpx>
+

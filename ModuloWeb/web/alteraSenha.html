@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Alteração de senha</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <form action="FrontControllerServlet?control=AlteraSenha" method="post">
+
+            Nome de usuario: <input type="text" name="usuario">
+            <br>
+            Senha Atual <input type="password" name="senha">
+            <br>
+            Senha Nova <input type="password" name="senhaNova">
+            <br>
+            Confirma Senha: <input type="password" name="senhaNovaConfirmacao">
+            <br>
+            <input type="submit" value="Altera">
+        </form>
+    </body>
+</html>

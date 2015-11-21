@@ -1,0 +1,23 @@
+<cenario>
+   <retangulos>
+      <retangulo>
+      	<posx>20</posx>
+      	<posy>20</posy>
+      	<largura>50</largura>
+      	<altura>50</altura>
+      </retangulo>
+      <retangulo>
+      	<posx>80</posx>
+      	<posy>20</posy>
+      	<largura>50</largura>
+      	<altura>100</altura>
+      </retangulo>
+      <retangulo>
+      	<posx>140</posx>
+      	<posy>20</posy>
+      	<largura>50</largura>
+      	<altura>80</altura>
+      </retangulo>
+     
+   </retangulos>
+</cenario>
