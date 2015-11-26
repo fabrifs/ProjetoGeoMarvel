@@ -49,9 +49,9 @@ public class MarvelService {
     @GET
     @Path("/listaPopup/{login}")
     @Produces({"application/text"})
-    public String listaPopup(@PathParam("login") final String nome) {
+    public String listaPopup(@PathParam("login") final String login) {
         List<Usuario> usuarios = new ArrayList<Usuario>();
-        usuarios = usuarioBean.listNome(nome);
+        usuarios = usuarioBean.listLogin(login);
         Usuario u = usuarios.get(0);
 
         String apikey = "62cc7f7bd41e3346a1af737e0449428b";
@@ -67,10 +67,12 @@ public class MarvelService {
         String uri;
         String nomeAvatar = u.getAvatar();
         //Conversão necessária para aplicar o %20 no nome
-        String[] name = nomeAvatar.split(" ");
-        String nomeOk = name[0] + "%20" + name[1];
+        
+        //String[] name = nomeAvatar.split(" ");
+        //String nomeOk = name[0] + "%20" + name[1];
+        nomeAvatar.replace(" ", "%20");
         //url de consulta
-        uri = urlbase + "?nameStartsWith=" + nomeOk + "&ts=" + ts + "&apikey=" + apikey + "&hash=" + hashStr;
+        uri = urlbase + "?nameStartsWith=" + nomeAvatar + "&ts=" + ts + "&apikey=" + apikey + "&hash=" + hashStr;
         //System.out.println(uri);
         try {
             HttpClient cliente = HttpClients.createDefault();
@@ -78,7 +80,7 @@ public class MarvelService {
             //HttpHost proxy = new HttpHost("172.16.0.10", 3128, "http");
             //RequestConfig config = RequestConfig.custom().setProxy(proxy).build();
             HttpGet httpget = new HttpGet(uri);
-            //httpget.setConfig(config);
+           // httpget.setConfig(config);
             HttpResponse response = cliente.execute(httpget);
             System.out.println("----------------------------------------");
             System.out.println(response.getStatusLine());
@@ -116,7 +118,7 @@ public class MarvelService {
                 
                 String result = "<p>Personagem: " + nomeMarvel + "</p> <br />";
                 result += "<p>Descrição: " + descricao + "</p> <br />";
-                result += "<img src='" + urlImg + ".jpg' alt='foto'/ height='100' width='100'>";
+                result += "<img src='" + urlImg + ".jpg' alt='foto'/ height='200' width='200'>";
                 return result;
 
             }

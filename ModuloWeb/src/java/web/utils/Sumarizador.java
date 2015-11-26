@@ -1,4 +1,4 @@
-package utils;
+package web.utils;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
@@ -29,6 +29,7 @@ public class Sumarizador {
     public void sumariza(String login) throws Exception {
 
         try {
+            
             //Busca no WS de posições as posições do usuário passado
             HttpClient cliente = HttpClients.createDefault();
             HttpGet httpget = new HttpGet("http://localhost:8080/ModuloWeb/LP3Rest/lp3/posicoes/" + login);
@@ -45,17 +46,18 @@ public class Sumarizador {
                 }
                 reader.close();
                 instream.close();
+                   
                 //Aplica a folha xsl no xml retornado
                 StringReader readerLine = new StringReader(out.toString());
                 Source xmlSource = new StreamSource(readerLine);
-                File xslFile = new File("C:\\Users\\Fabrizzio\\Desktop\\ProjetoLP3\\Apps\\dados\\xsl\\cenarioGpx.xsl");
+                File xslFile = new File("C:\\Users\\Fabrizzio\\Desktop\\ProjetoLP3\\Apps\\ModuloWeb\\web\\dados\\xsl\\cenarioGpx.xsl");
                 TransformerFactory transFact = TransformerFactory.newInstance();
                 Transformer trans = transFact.newTransformer(new StreamSource(xslFile));
                 ByteArrayOutputStream bos = new ByteArrayOutputStream();
                 trans.transform(xmlSource, new StreamResult(bos));
                 
                 //Grava o arquivo com o xsl retornado
-                PrintWriter writer = new PrintWriter("C:/Users/Fabrizzio/Desktop/ProjetoLP3/Apps/ModuloWeb/web/dados/pontos.gpx", "UTF-8");
+                PrintWriter writer = new PrintWriter("C:\\Users\\Fabrizzio\\Desktop\\ProjetoLP3\\Apps\\ModuloWeb\\web\\dados\\pontos.gpx", "UTF-8");
                 writer.println(bos);
                 writer.close();
             }
@@ -64,5 +66,7 @@ public class Sumarizador {
         }
 
     }
-
 }
+
+
+

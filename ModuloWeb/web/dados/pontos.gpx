@@ -1,18 +1,309 @@
 <?xml version="1.0" encoding="UTF-8"?><gpx xmlns="http://www.topografix.com/GPX/1/1">
-<wpt lon="157.00" lat="5.00">
+<wpt lon="-46.6776294" lat="-23.5798865">
 <ele>0</ele>
-<time>"{$timestamp}"</time>
-<name>"{$login}"</name>
+<time>2015-11-23 17:32:28</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
 </wpt>
-<wpt lon="-2698365.38923" lat="-5193252.61684">
+<wpt lon="-46.6775734" lat="-23.579857">
 <ele>0</ele>
-<time>"{$timestamp}"</time>
-<name>"{$login}"</name>
+<time>2015-11-23 17:32:57</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
 </wpt>
-<wpt lon="-3698365.38923" lat="-5293252.61684">
+<wpt lon="-46.6726298" lat="-23.5772102">
 <ele>0</ele>
-<time>"{$timestamp}"</time>
-<name>"{$login}"</name>
+<time>2015-11-23 17:34:16</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6715365" lat="-23.5770627">
+<ele>0</ele>
+<time>2015-11-23 17:36:09</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6687599" lat="-23.5752886">
+<ele>0</ele>
+<time>2015-11-23 17:38:54</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6678603" lat="-23.574615">
+<ele>0</ele>
+<time>2015-11-23 17:39:38</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6660196" lat="-23.5732846">
+<ele>0</ele>
+<time>2015-11-23 17:39:54</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6658922" lat="-23.573212">
+<ele>0</ele>
+<time>2015-11-23 17:40:23</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6656766" lat="-23.5730788">
+<ele>0</ele>
+<time>2015-11-23 17:40:54</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6656769" lat="-23.5730785">
+<ele>0</ele>
+<time>2015-11-23 17:41:24</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.665399" lat="-23.572864">
+<ele>0</ele>
+<time>2015-11-23 17:42:00</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6652629" lat="-23.5727485">
+<ele>0</ele>
+<time>2015-11-23 17:42:26</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6652364" lat="-23.5727155">
+<ele>0</ele>
+<time>2015-11-23 17:42:57</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.664404" lat="-23.5721361">
+<ele>0</ele>
+<time>2015-11-23 17:44:27</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6629173" lat="-23.5710819">
+<ele>0</ele>
+<time>2015-11-23 17:45:28</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6623062" lat="-23.5705679">
+<ele>0</ele>
+<time>2015-11-23 17:46:32</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.660941" lat="-23.5691532">
+<ele>0</ele>
+<time>2015-11-23 17:48:36</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6548171" lat="-23.5602106">
+<ele>0</ele>
+<time>2015-11-23 17:52:58</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6544514" lat="-23.5596604">
+<ele>0</ele>
+<time>2015-11-23 17:53:29</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6536395" lat="-23.5585502">
+<ele>0</ele>
+<time>2015-11-23 17:53:55</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6526204" lat="-23.5578534">
+<ele>0</ele>
+<time>2015-11-23 17:54:37</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6516675" lat="-23.557354">
+<ele>0</ele>
+<time>2015-11-23 17:55:30</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6516412" lat="-23.5573183">
+<ele>0</ele>
+<time>2015-11-23 17:56:02</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6507216" lat="-23.5568338">
+<ele>0</ele>
+<time>2015-11-23 17:56:33</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6506603" lat="-23.5567965">
+<ele>0</ele>
+<time>2015-11-23 17:57:02</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6501964" lat="-23.5563785">
+<ele>0</ele>
+<time>2015-11-23 17:57:54</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6508917" lat="-23.5559157">
+<ele>0</ele>
+<time>2015-11-23 17:59:07</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6520446" lat="-23.553919">
+<ele>0</ele>
+<time>2015-11-23 17:59:35</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6518435" lat="-23.5530061">
+<ele>0</ele>
+<time>2015-11-23 18:00:11</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6478133" lat="-23.5513206">
+<ele>0</ele>
+<time>2015-11-23 18:01:07</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6479144" lat="-23.5510808">
+<ele>0</ele>
+<time>2015-11-23 18:01:35</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6485488" lat="-23.5491278">
+<ele>0</ele>
+<time>2015-11-23 18:02:09</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6486811" lat="-23.5489778">
+<ele>0</ele>
+<time>2015-11-23 18:02:36</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6486811" lat="-23.5489778">
+<ele>0</ele>
+<time>2015-11-23 18:03:01</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6488457" lat="-23.5485045">
+<ele>0</ele>
+<time>2015-11-23 18:03:09</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6511308" lat="-23.5462172">
+<ele>0</ele>
+<time>2015-11-23 18:06:10</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6518692" lat="-23.5452887">
+<ele>0</ele>
+<time>2015-11-23 18:07:01</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6505953" lat="-23.5457444">
+<ele>0</ele>
+<time>2015-11-23 18:08:40</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6505953" lat="-23.5457444">
+<ele>0</ele>
+<time>2015-11-23 18:08:51</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6516328" lat="-23.5452861">
+<ele>0</ele>
+<time>2015-11-23 18:09:27</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6518995" lat="-23.5453199">
+<ele>0</ele>
+<time>2015-11-23 18:09:53</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6519283" lat="-23.545337">
+<ele>0</ele>
+<time>2015-11-23 18:10:27</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6519626" lat="-23.5453756">
+<ele>0</ele>
+<time>2015-11-23 18:11:18</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6519626" lat="-23.5453756">
+<ele>0</ele>
+<time>2015-11-23 18:11:19</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6519344" lat="-23.5454">
+<ele>0</ele>
+<time>2015-11-23 18:11:22</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6518624" lat="-23.545426">
+<ele>0</ele>
+<time>2015-11-23 18:13:03</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6513502" lat="-23.547111">
+<ele>0</ele>
+<time>2015-11-23 18:13:09</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.651382" lat="-23.5468692">
+<ele>0</ele>
+<time>2015-11-23 18:13:45</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6518914" lat="-23.5472274">
+<ele>0</ele>
+<time>2015-11-23 18:13:49</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6518914" lat="-23.5472274">
+<ele>0</ele>
+<time>2015-11-23 18:14:39</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
+</wpt>
+<wpt lon="-46.6518914" lat="-23.5472274">
+<ele>0</ele>
+<time>2015-11-23 18:14:39</time>
+<name>entrega@entrega.com</name>
+<type>Point</type>
 </wpt>
 </gpx>
 

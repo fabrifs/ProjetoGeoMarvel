@@ -1,20 +1,8 @@
 var meuMapa;
 function init() {
-	
-	var vector = new ol.layer.Vector({
-        source: new ol.source.Vector({
-          url: 'dados/pontos.gpx',
-          format: new ol.format.GPX()
-        }),
-        style: function(feature, resolution) {
-          return style[feature.getGeometry().getType()];
-        }
-      });
-	
-	
+
     meuMapa = new ol.Map({
-	layers: [raster, vector],
-        target: 'MeuMapa',
+        target: MeuMapa,
         renderer: 'canvas',
         view: new ol.View({
             projection: 'EPSG:900913',
@@ -22,58 +10,52 @@ function init() {
             zoom: 18
         })
     });
-	
-	var displayFeatureInfo = function(pixel) {
-        var features = [];
-        map.forEachFeatureAtPixel(pixel, function(feature, layer) {
-          features.push(feature);
-        });
-        if (features.length > 0) {
-          var info = [];
-          var i, ii;
-          for (i = 0, ii = features.length; i < ii; ++i) {
-            info.push(features[i].get('desc'));
-          }
-          document.getElementById('info').innerHTML = info.join(', ') || '(unknown)';
-          map.getTarget().style.cursor = 'pointer';
-        } else {
-          document.getElementById('info').innerHTML = '&nbsp;';
-          map.getTarget().style.cursor = '';
-        }
-      };
-	
+
     var openStreetMapLayer = new ol.layer.Tile({
         source: new ol.source.OSM()
     });
     meuMapa.addLayer(openStreetMapLayer);
-    var iconFeature = new ol.Feature({
-        geometry: new ol.geom.Point([-5193252.61684, -2698365.38923]),
-        name: 'Fabio'
+
+
+    var bingLayer = new ol.layer.Tile({
+        source: new ol.source.BingMaps({
+            imagerySet: 'Aerial',
+            key: 'Ak-dzM4wZjSqTlzveKz5u0d4IQ4bRzVI309GxmkgSVr1ewS6iPSrOvOKhACJlm3'
+        })
     });
-    var iconStyle = new ol.style.Style({
+    bingLayer.setOpacity(.3);
+    meuMapa.addLayer(bingLayer);
+
+
+    var pointStyle = new ol.style.Style({
         image: new ol.style.Icon(({
-            anchor: [0.5, 46],
+            anchor: [0, 0],
             anchorXUnits: 'fraction',
-            anchorYUnits: 'pixels',
+            anchorYUnits: 'fraction',
             opacity: 0.75,
             src: 'dados/r2d2.png'
         }))
     });
-    iconFeature.setStyle(iconStyle);
-    var vectorSource = new ol.source.Vector({
-        features: [iconFeature]
+    var layergpx = new ol.layer.Vector({
+        source: new ol.source.Vector({
+            projection: 'EPSG:4326',
+            format: new ol.format.GPX(),
+            url: 'dados/pontos.gpx'
+        }),
+        style: pointStyle
     });
-    var vectorLayer = new ol.layer.Vector({
-        source: vectorSource
-    });
-    meuMapa.addLayer(vectorLayer);
+    meuMapa.addLayer(layergpx);
+
     var element = document.getElementById('popup');
     var popup = new ol.Overlay({
         element: element,
         positioning: 'bottom-center',
         stopEvent: false
+        
     });
     meuMapa.addOverlay(popup);
+
+    /*
     meuMapa.on('click', function (evt) {
         var feature = meuMapa.forEachFeatureAtPixel(evt.pixel,
                 function (feature, layer) {
@@ -81,8 +63,25 @@ function init() {
                 });
         if (feature) {
             popup.setPosition(evt.coordinate);
-            var xmlString;
-            var login = feature.get('name')
+            $(element).popover({
+                'placement': 'top',
+                'html': true,
+                'content': feature.get('name')
+            });
+            $(element).popover('show');
+        } else {
+            $(element).popover('destroy');
+        }
+    });
+    */
+     meuMapa.on('click', function (evt) {
+        var feature = meuMapa.forEachFeatureAtPixel(evt.pixel,
+                function (feature, layer) {
+                    return feature;
+                });
+        if (feature) {
+            popup.setPosition(evt.coordinate);
+            var login = feature.get('name');
             var urlString = 'http://localhost:8080/ModuloWeb/Marvel/marvel/listaPopup/';
             console.log(urlString);
             urlString = urlString.concat(login);
@@ -109,6 +108,7 @@ function init() {
             $(element).popover('destroy');
         }
     });
+    
     meuMapa.on('pointermove', function (e) {
         if (e.dragging) {
             $(element).popover('destroy');

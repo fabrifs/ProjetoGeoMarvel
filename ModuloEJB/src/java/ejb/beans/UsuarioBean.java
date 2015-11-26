@@ -31,9 +31,15 @@ public class UsuarioBean {
         List<Usuario> list = query.getResultList();
         return list;
     }
-    
+
     public List<Usuario> listNome(String nome) {
-        Query query = em.createQuery("FROM Usuario u where u.nome ='" +nome+ "'");
+        Query query = em.createQuery("FROM Usuario u where u.nome ='" + nome + "'");
+        List<Usuario> list = query.getResultList();
+        return list;
+    }
+
+    public List<Usuario> listLogin(String login) {
+        Query query = em.createQuery("FROM Usuario u where u.login ='" + login + "'");
         List<Usuario> list = query.getResultList();
         return list;
     }
@@ -72,6 +78,5 @@ public class UsuarioBean {
         return null;
 
     }
-    
-    
+
 }

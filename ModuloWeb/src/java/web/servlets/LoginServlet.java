@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import utils.Sumarizador;
+import web.utils.Sumarizador;
 
 public class LoginServlet extends HttpServlet {
 
@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
             String usuarioRequest = request.getParameter("usuario");
             String senhaRequest = request.getParameter("senha");
             
-            Sumarizador sum = (Sumarizador) InitialContext.doLookup("java:/global/AppCorporativa/ModuloEJB/Sumarizador");
+            Sumarizador sum = new Sumarizador();
             sum.sumariza(usuarioRequest);
             
             
